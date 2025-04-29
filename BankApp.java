@@ -46,6 +46,11 @@ class SavingsAccount extends Account
 	{
 		return balnance*interest_rate;
 	}
+
+	public void displayBalance()
+	{
+		System.out.println("Balance: "+balnance);
+	}
 }
 
 class CurrentAccount extends Account
@@ -99,6 +104,8 @@ class Bank{
 			acc.display();
 			if(acc instanceof CurrentAccount)
 				((CurrentAccount)acc).displayOverdraftAmount();
+			if(acc instanceof SavingsAccount)
+				((SavingsAccount)acc).displayBalance();
 		}
 	}
 }
