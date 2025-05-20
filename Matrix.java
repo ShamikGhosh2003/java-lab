@@ -2,9 +2,6 @@ import java.util.Scanner;
 
 class Matrix3D
 {
-	//int m1[][][],m2[][][];
-	//int diff1[][][],diff2[][][];
-	//int k,m,n;
 	public void takeInput(Scanner sc,int arr[][][],int k,int m,int n)
 	{
 		for(int i=0;i<k;i++)
